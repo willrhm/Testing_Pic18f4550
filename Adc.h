@@ -14,6 +14,7 @@
 
 void AdcInit();
 unsigned int AdcRead(unsigned char ch);
+void AdcTest();
 
 #endif	/* ADC_H */
 

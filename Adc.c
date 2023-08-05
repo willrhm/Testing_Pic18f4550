@@ -33,3 +33,8 @@ unsigned int AdcRead(unsigned char ch)
     ADCON0bits.ADON = 0;
     return ADRES;
 }
+
+void AdcTest()
+{
+    
+}
