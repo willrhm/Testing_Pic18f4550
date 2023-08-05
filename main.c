@@ -13,6 +13,7 @@
 
 
 #include "Configuration.h"
+#include "Adc.h"
 
 void main(void) {
     
