@@ -36,5 +36,5 @@ unsigned int AdcRead(unsigned char ch)
 
 void AdcTest()
 {
-    
+    int i= 0;
 }
