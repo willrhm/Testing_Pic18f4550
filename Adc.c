@@ -12,13 +12,14 @@ void AdcInit()
     /*REFERENCE*/
     ADCON1bits.VCFG0 = 0;   //VDD
     ADCON1bits.VCFG1 = 0;   //VSS
-    /*UNABLE EL ADC AND CHOSE CHANNEL 0*/
+    /*DISABLE ADC AND SELECT CHANNEL 0*/
     ADCON0 = 0;
+    /*CONFIGURATION ADC*/
     /*FOSC = 6*/
     ADCON2bits.ADCS = 1;
     /*TAD = 4*/
     ADCON2bits.ACQT = 2;
-    /*JUSTIFICATION RIGHT*/
+    /*RIGHT JUSTIFICATION*/
     ADCON2bits.ADFM = 1;
 }
 
