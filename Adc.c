@@ -24,5 +24,12 @@ void AdcInit()
 
 unsigned int AdcRead(unsigned char ch)
 {
+    if(ch > 13)return 0;
+    ADCON0 = 0;
+    ADCON0 = (ch<<2);
+    ADCON0bits.ADON = 1;
+    ADCON0bits.GO_DONE = 1;
+    while(ADCON0bits.GO_DONE == 1);
+    ADCON0bits.ADON = 0;
     return ADRES;
 }
